@@ -1,0 +1,13 @@
+C:\Tetris\Tetris\bin\Release\Tetris.exe.config
+C:\Tetris\Tetris\bin\Release\Tetris.exe
+C:\Tetris\Tetris\bin\Release\Tetris.pdb
+C:\Tetris\Tetris\obj\x86\Release\MainWindow.baml
+C:\Tetris\Tetris\obj\x86\Release\MainWindow.g.cs
+C:\Tetris\Tetris\obj\x86\Release\App.g.cs
+C:\Tetris\Tetris\obj\x86\Release\Tetris_Content.g.cs
+C:\Tetris\Tetris\obj\x86\Release\Tetris_MarkupCompile.cache
+C:\Tetris\Tetris\obj\x86\Release\Tetris.g.resources
+C:\Tetris\Tetris\obj\x86\Release\Tetris.Properties.Resources.resources
+C:\Tetris\Tetris\obj\x86\Release\Tetris.csproj.GenerateResource.Cache
+C:\Tetris\Tetris\obj\x86\Release\Tetris.exe
+C:\Tetris\Tetris\obj\x86\Release\Tetris.pdb

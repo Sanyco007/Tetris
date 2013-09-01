@@ -1,0 +1,30 @@
+﻿<Window x:Class="Tetris.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:winForms="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+        Title="Tetris" Height="426" Width="360" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None" Background="#00000000" AllowsTransparency="True" MouseLeftButtonDown="Window_MouseLeftButtonDown" KeyDown="Window_KeyDown" KeyUp="Window_KeyUp" LostFocus="Window_LostFocus" Closing="Window_Closing" Icon="/Tetris;component/icon.ico">
+    <Window.Resources>
+        <LinearGradientBrush x:Key="Background1" EndPoint="1,0.5" StartPoint="0,0.5">
+            <GradientStop Color="#FF1E3FA7" Offset="0" />
+            <GradientStop Color="#FF5478F2" Offset="1" />
+        </LinearGradientBrush>
+        <LinearGradientBrush x:Key="Background2" EndPoint="1,0.5" StartPoint="0,0.5">
+            <GradientStop Color="#FF5E7ADF" Offset="0" />
+            <GradientStop Color="#FFD4DFFF" Offset="1" />
+        </LinearGradientBrush>
+        <SolidColorBrush x:Key="BlueVioletBrushKey">#FF4B26D2</SolidColorBrush>
+    </Window.Resources>
+    <Grid >
+        <Image Height="426" Name="BackImage" Stretch="Fill" Width="360" Source="/Tetris;component/Images/background.png" />
+        <Image Height="360px" HorizontalAlignment="Left" Margin="82,35,0,0" Name="canvas" Stretch="None" VerticalAlignment="Top" Width="180px" MaxWidth="180" MouseMove="canvas_MouseMove" MouseLeftButtonDown="canvas_MouseLeftButtonDown" MouseLeave="canvas_MouseLeave" />
+        <Button Content="1" Height="30" HorizontalAlignment="Left" Margin="29,278,0,0" Name="button1" VerticalAlignment="Top" Width="30" ClickMode="Hover" BorderThickness="0" BorderBrush="{StaticResource BlueVioletBrushKey}" Background="{StaticResource Background2}"></Button>
+        <Button Background="#FFDADADA" BorderThickness="0" ClickMode="Hover" Content="2" Height="30" HorizontalAlignment="Left" Margin="29,319,0,0" Name="button2" VerticalAlignment="Top" Width="30" />
+        <Button Background="#FFDADADA" BorderThickness="0" ClickMode="Hover" Content="3" Height="30" HorizontalAlignment="Left" Margin="29,360,0,0" Name="button3" VerticalAlignment="Top" Width="30" />
+        <Image Height="36" HorizontalAlignment="Left" Margin="296,63,0,0" Name="next" Stretch="UniformToFill" VerticalAlignment="Top" Width="36" />
+        <Label Height="36" HorizontalAlignment="Left" Margin="18,232,0,0" Name="lines" VerticalAlignment="Top" Width="47" Foreground="#FFFF9D00" BorderThickness="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="16">
+            <Label.Background>
+                <ImageBrush ImageSource="/Tetris;component/Images/linesBack.png" />
+            </Label.Background>
+        </Label>
+    </Grid>
+</Window>
